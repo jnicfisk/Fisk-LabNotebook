@@ -1,0 +1,80 @@
+---
+title: "20211406-notebook"
+author: "J. Nick Fisk"
+date: "6/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# TL;DR
+
+# Table of Contents
+1. Reminders for Tomorrow
+2. Helping Mofeed
+3. CES Project Meeting
+4. SMBE Registration
+5. Keratin Tree
+6. Ethan Cyreene
+7. Github Notebook
+8. Anti-racist pedagogy
+9. Vaccine Portal
+10. Townsend-Fisk Weekly Meeting
+
+
+## Reminders for Tomorrow
+N/A Moving so going to mostly do mainatinence work (e.g. starting some jobs, answering emails) in the morning and then move stuff all afternoon.
+
+### Helping Mofeed
+
+I arrived into lab, let Mofeed in, directed him to get his swipe sorted out, and brought in my old machine to set up on the desk. I made him an account on it.
+This should help him with his Chimera modelling. Would be really good to get him set up on some other machines in the lab too, but not sure about passwords and such.
+On and off for the rest of the day, I aided him.
+
+### CES Project Meeting
+I attended the 10am meeting to review papers with the summer students. I stayed on after with Jeff to help him explain the tumor sequencing protocols to the summer students.
+
+### SMBE Registration
+Per Sayaka's warning, I double checked my registration for SMBE. I hadn't registered, so I did so.
+
+### Keratin Tree Making with Mihn Ho and Brian Thompson
+Wang put me in contact with Mihn Ho and Brian Tompson last week. They have a nearly complete review manuscript but a collaborator insisted on having a proper tree of keratin across species made. It is too big for Wang, requiring the cluster, so he pointed them to me. 
+
+On farnam, I downloaded MAFFT. I compiled the program from source. I converted the big list of disparate looking fasta files given to me by Ho to a proper multifasta.
+(See: `fasta-to-single-line-seq-fasta.R`)
+Examining their prior attempt at alignment, I noticed some really really gap-y regions. To ascertain whether or not it was a problem of their alignment or a data issue,
+I decided to realign.
+
+`#bash`
+`/home/jnf9/mafft-7.481-without-extensions/core/mafft --auto --inputorder "keratin.fasta" > "keratin.newrun.fasta.aln"`
+
+I had a meeting with Ho and Brian at 1:45pm. In it, I spent like 2 hours really getting into the weeds about their project and what It'll require and and all that, but decided it was a really low-effort and high-reward avenue to pursue. I am running an alignment with MAFFT and then going to filter out uninformative sites, run a ML tree in IQTree and a MrBayes tree using a script Wang sent them, but, like, more generations. Will report back to them soon.
+
+### Ethan Cyreene
+Ethan needed the lung-brain-mets data. I compressed it and uploaded it to the lab Google drive. `https://drive.google.com/drive/folders/137pikfBFxnWRsE4db_VgUaHbRWmJZtxt?usp=sharing`
+I added Ethan to the lab google drive so he could access it. 
+
+### Github Notebook
+Created a system and channel for keeping the present notebook. Did so by adding github app to my slack, creating a channel, and subscribing to that channel with github
+
+### Anti-racist pedagogy
+Alternate Monday evenings, I participate in a anti-racist pedagogy learning community. In advance of the meeting, I read:
+> Unsettling the academy: workingthrough the challenges of anti-racist pedagogy by Wanger
+and
+> Anti-racist pedagogy: from faculty’s self-reflection to organizing within and beyond the classroom by Kishimoto
+
+There were many great points raised in the discussion, such as the difference between inclusive teaching and antiracist teaching, as well as talking about the tension between the training we recieve as educators versus more of a conflict guidance and almost therapy-like skillset needed at the highest levels of antiracist teaching. Discussion included some talk of knowledge equity and the like. We will meet again in 2 weeks, with more readings! 
+
+### Vaccine Portal
+Verified my vaccine status with Yale to retain office access.
+
+### Townsend-Fisk Weekly Meeting
+We met.
+Talked about many things (JCO, Password for lab machines, SMBE, Mofeed Progress, Stuff reported here, my dificulties getting immuno-effect off the ground)
+
+
+
+
+
