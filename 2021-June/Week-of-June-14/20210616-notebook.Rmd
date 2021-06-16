@@ -9,3 +9,51 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## TL;DR
+
+
+## Table of Contents
+
+
+## Troubleshooting Immuno-effect pipeline
+
+### Optitype
+I don't have root on the cluster, and am worried that my source build is may the the issue. The authors have provided a docker image, so I pulled it into singularity
+`singularity pull docker://fred2/optitype`
+
+I also downloaded the reference data from their github repo. We may want to use more recent reference data in the future, but for now this works:
+`wget https://raw.githubusercontent.com/FRED-2/OptiType/master/data/hla_reference_dna.fasta`
+`wget https://raw.githubusercontent.com/FRED-2/OptiType/master/data/hla_reference_rna.fasta`
+`wget https://raw.githubusercontent.com/FRED-2/OptiType/master/data/alleles.h5`
+
+h5 data seems to be a sort of hiearchical indexing binary.
+
+Load up samtools
+`module load SAMTools`
+
+Not sure the broad state of the politi bams, but it doesn't hurt to collate them either way
+Lets use YLR002P2 as our test sequence.
+`samtools collate -f -O /ycga-gpfs/project/politi_katerina/fjd27/Townsend_collab/Nick_BAM/YLR002P2.bam > ~/scratch60/YLR002P2_collated.bam`
+
+I'll need the bams still, but here is a good spot to get the fastq
+`samtools fastq -0 ~/scratch60/alt_readsYLR002P2.fastq ~/scratch60/YLR002P2_collated.bam > ~/scratch60/all_reads_YLR002P2.fastq`
+
+BWA alignment to reference time, baby~
+'module load BWA`
+
+make an index file
+`bwa index ~/optitype/data/hla_reference_dna.fasta`
+
+align time
+`bwa mem -p ~/optitype/data/hla_reference_dna.fasta ~/scratch60/all_reads_YLR002P2.fastq -o hla_YLR002P2.sam`
+
+It'll take a longish time so running it as a batch job is advisable
+
+
+## Keratin
+Alignment timed out, reran with a limit of 4days 4 hours, hopefully doesn't take that long.
+
+## Mofeed
+Got Remote Utilities set up so mofeed can run from the machine I'm leaving here even when he isn't in the office.
+
+Also, sent him Wang's email and Alex's bladder paper after discussing features of a good paper for CES 
