@@ -1,0 +1,95 @@
+---
+title: "June 6 2022 Example"
+author: "J. Nick Fisk"
+date: "06/03/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Table of Contents
+0. [General Reflection](#General)
+1. [Cole's Rotation](# coles rotation)
+2. [2 Trees Project](# 2 trees project)
+3. [MASS-PRF COVID](# MASS-PRF COVID)
+4. [Politi Manuscript](# Politi Manuscript)
+5. [Bees/GC Noise](# Bees GC Bias and Noise)
+6. [Non-lab extras](# Non-lab extras)
+7. [Notable Deadlines](# notable deadlines)
+
+## General Reflection
+In constrast to the week before, last week was markedly less productive. I recieved harrowing news that cut my trip in albuquerque short and had me go home instead. While I did get some work there, the combination of slow internet and extreme family duress makes it hard to do anything there. I had accomodations one day where I got truthfully the bulk of my work done. 
+
+I'm back in New Haven, dealing with the whiplash of being back by working in the office all day. TJ is dutifully around, as ever. For now, just want to close the books on some projects and get more and more productive days under my belt. The days I had in Alb. when my friend was working were so nice and productive--I know I can have that here, too.
+
+## Cole's rotation
+
+### Lung-brain-mets
+I have Cole recapitulating/checking trees with regards to the lung-to-brain-mets project. He has them all running at this point, and will let me know when he's ready to sit down, examine and discuss. 
+### The Pancreatic commentary
+Mofeed has really been a bit flakely lately--but I called him last Thursday and he has coughing and seemed pretty miserable. Wouldn't say whats wrong, but I asked him to just let me know where he is at and if he has time. As I haven't heard from him, I am going to solve the data processing issue and send Cole results to process tomorrow morning (these are DNA+character trees)
+
+## 2 Trees Project
+
+### Tree Figures
+I spent a decent amount of Monday (October 11) in the office watching tutorials and experiementing. I've posted updated figures to #egfr-2-trees channel in slack, need adjuctication on top or bottom. 
+Once that is done, I know how to make the other adjustments, but moving the scale to the top requires a lot of moved parts so I want to make sure one way or the other is good as I am not the fastest at this and it is not time-cost effective
+
+### Signature Plots
+Related to what Cole is doing, I went back to try and generalize my code that does tree-wise signature calling. It is...close. Close enough to hand to him. Once its done, I'll upload as a standalone to github (treeutils?)
+
+I'll have the plots made by sometime later tomorrow, though I have coarse versions on github
+
+### Code
+I have commented out all my data converstion (e.g. MAF to FASTA) code and uploaded it to the github. Still need to write some prose about the process, but shouldn't take too long
+
+### Time table
+Recovered the patient clinical timeline from early supplements from this paper, reformatted to include as supplement here to refer reviewer to in addition to our on-tree graphical timeline
+
+
+### Misc edits
+Have made most of the misc edits, save making sure the treatments are listed in chronographical order
+
+## MASS-PRF COVID
+### What next
+What else needs to be done? I have the code and made a bunch of figures, what, if anything, do I need to do next?
+
+## Politi Manuscript
+
+### Manuscript itself
+Added a little prose
+
+### Neoantigen calling
+Fell by the wayside to accomodate covid and review work, but not far from being done. Worst comes to worst, I'll have to have it done when Cole needs it.
+
+
+## Bees (GC Bias and Noise)
+No change, almost done but discovered maybe I don't have the most recent version of the signal-noise theory in ultimate-signal-noise? Is the one in the mathematica workbook the most to-date (e.g. all paramaters variable)
+
+## Non-lab extras
+
+### Teaching workshop
+This week is my final workshop on gender in the classroom. WIP slides are here: https://docs.google.com/presentation/d/1lQNoE2oWEQ4kmNeQNWUiGHvOMK4Yd_rFivn7S-jz_zk/edit?usp=sharing
+
+### Book chapter
+
+My chapter on knowledge equity is about half done, with a deadline in November. I'm sharing it with MEE teachyfolk next week, as a WIP. Current draft here: https://docs.google.com/document/d/1bWZqDS5YhbIAM2CcTXoXPyAXAZ7DIUEJguEEQk-fR78/edit
+
+### Provost's Advisory Committee 
+
+I re-accepted the invite to serve on the Provost's advisory committee on accessibility resources, which meets Tuesday Oct 12. 
+
+### Monthly Meeting with CBB DGS
+
+I now have a standing meeting, alondside Kyra, with Dr. Kleinstein the third tuesday of each month. First is 3pm October 19th.
+
+### Science in the News
+I am a director (previously a coordinator and even previously-er a speaker) for Yale Science Communication. Running the final auditions today (Monday, Oct 11th) to calcify our speaker lineup.
+
+## Notable Deadlines
+
+### October 20th: Cancer Letters Revision is DUE!
+

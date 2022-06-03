@@ -36,7 +36,7 @@ Lets use YLR002P2 as our test sequence.
 `samtools collate -f -O /ycga-gpfs/project/politi_katerina/fjd27/Townsend_collab/Nick_BAM/YLR002P2.bam > ~/scratch60/YLR002P2_collated.bam`
 
 I'll need the bams still, but here is a good spot to get the fastq
-`samtools fastq -0 ~/scratch60/alt_readsYLR002P2.fastq ~/scratch60/YLR002P2_collated.bam > ~/scratch60/all_reads_YLR002P2.fastq`
+`samtools fastq -0 ~/scratch60/alt_readsYLR00cp 2P2.fastq ~/scratch60/YLR002P2_collated.bam > ~/scratch60/all_reads_YLR002P2.fastq`
 
 BWA alignment to reference time, baby~
 'module load BWA`
